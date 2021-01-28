@@ -89,7 +89,7 @@ int main(int argc, char *const *argv) {
 
     // The format string used to build the ghostscript command.
     const char *ghostscript_format =
-        "gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/%s "
+        "ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/%s "
         "-dNOPAUSE -dQUIET -dBATCH -sOutputFile=%s %s";
     // Allocating a buffer wide enough for the command line argument of
     // ghostscript. Note that there are 3 '%s' characters that will be removed
